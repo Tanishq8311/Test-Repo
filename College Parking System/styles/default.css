@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  border-bottom: 2px solid #ccc;
+}
+header h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+
+form {
+  background: #f2f2f2;
+  max-width: 400px;
+  padding: 0 30px;
+  margin: 10px auto;
+  box-shadow: 2px 2px 2px #ccc;
+  border-radius: 3px;
+  transition: 0.4s;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+form.collapsed {
+  height: 45px;
+  transition: 0.4s;
+  background-color: #0084ff;
+}
+form.collapsed h1 {
+  color: #fff;
+}
+form.collapsed h1:after {
+  content: "+";
+}
+form h1 {
+  display: flex;
+  justify-content: space-between;
+}
+form h1:after {
+  content: "-";
+}
+form input:not([type=submit]), form select {
+  width: 100%;
+  background: #fff;
+  margin: 5px auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+form input[type=submit], form input[type=button] {
+  background-color: #0084ff;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  margin: 10px auto;
+  display: block;
+}
+form input[type=button] {
+  background-color: #888;
+}
+
+#pass {
+  margin: 30px auto;
+  max-width: 400px;
+  border: dashed 2px #ccc;
+  padding: 30px;
+  line-height: 2rem;
+  box-sizing: border-box;
+}/*# sourceMappingURL=default.css.map */
